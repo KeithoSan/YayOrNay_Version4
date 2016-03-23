@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using YayOrNay.Models;
 
 namespace YayOrNay.Controllers
 {
@@ -15,9 +16,13 @@ namespace YayOrNay.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+           
 
-            return View();
+            var model = new AboutModel();
+            model.Name = "Keith";
+            model.Location = "Ireland, Dublin";
+
+            return View(model);
         }
 
         public ActionResult Contact()
