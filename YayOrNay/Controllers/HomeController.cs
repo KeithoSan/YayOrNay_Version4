@@ -11,6 +11,7 @@ namespace YayOrNay.Controllers
     {
         public ActionResult Index()
         {
+            
             return View();
         }
 

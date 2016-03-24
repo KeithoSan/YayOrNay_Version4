@@ -29,5 +29,7 @@ namespace YayOrNay.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<YayOrNay.Models.MovieReview> MovieReviews { get; set; }
     }
 }
